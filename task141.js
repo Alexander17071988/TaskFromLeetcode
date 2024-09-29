@@ -22,7 +22,7 @@ var hasCycle = function (head) {
     while (fast !== null && fast.next !== null) {
         snow = snow.next;
         fast = fast.next.next;
-        if (snow.next === fast.next.next) {
+        if (snow === fast) {
             return true
         };
     };
